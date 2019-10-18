@@ -1,19 +1,19 @@
 module Findable
 module VariableMethods
 
-@@self = []
+@@all = []
 
  def initialize(name)
     @name = name
-    @@self << self
+    @@all << self
   end
  
   def all
-    @@self
+    @@all
   end
  
   def find_by_name(name)
-    @@self.detect {|a| a.name == name}
+    @@all.detect {|a| a.name == name}
   end
 end
 end
