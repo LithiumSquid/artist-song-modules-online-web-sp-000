@@ -2,11 +2,11 @@ require 'pry'
 
 class Song
   extend Memorable::ClassMethods
-    include Findable::VariableMethods
+    extend Findable::ClassMethods
   attr_accessor :name
   attr_reader :artist
 
-  @@all = []
+  @@songs = []
 
   #def initialize
  #   @@songs << self
