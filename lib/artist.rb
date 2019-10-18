@@ -17,9 +17,9 @@ class Artist
  #   @@artists.detect{|a| a.name == name}
  # end
 
- # def self.all
- #   @@artists
- # end
+  def self.all
+    @@artists
+  end
 
   def add_song(song)
     @songs << song
