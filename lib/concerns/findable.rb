@@ -1,8 +1,6 @@
 module Findable
 module VariableMethods
 
-@@all = []
-
  def initialize(name)
     @name = name
     @@all << self
